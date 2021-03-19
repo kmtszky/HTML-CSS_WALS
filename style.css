@@ -36,6 +36,7 @@ a {
 .heading-msg {
   font-size: 16px;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 /* header */
@@ -101,7 +102,6 @@ header {
 
 .pf-images {
   width: 920px;
-  padding-bottom: 90px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -131,17 +131,15 @@ header {
 
 .img4 {
   background-image: url(img/webcamp.png);
-  margin-bottom: 10px;
 }
 
 .img5 {
   background-image: url(img/talk.jpg);
-  margin: 0 10px 10px;
+  margin: 0 10px;
 }
 
 .img6 {
   background-image: url(img/webcamp-mother.png);
-  margin-bottom: 10px;
 }
 
 /* feature */
@@ -152,5 +150,31 @@ header {
 
 .contents {
   width: 980px;
+  margin: 0 auto;
+  display: flex;
 }
--
+
+.content {
+  width: 320px;
+}
+
+.content-center {
+  width: 320px;
+  margin: 0 10px;
+}
+
+.fas {
+  font-size: 60px;
+}
+
+.content h3 {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px auto;
+}
+
+.content p {
+  text-align: left;
+  font-size: 16px;
+  color: #000000;
+}
