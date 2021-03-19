@@ -8,6 +8,21 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 32px;
+  color: #000000;
+}
+
+.title::after {
+  content: "";
+  height: 3px;
+  width: 70px;
+  background-color: #ec715f;
+  margin: 8px auto 30px auto;
+  display: block;
+}
+
+/* header */
 header {
   width: 100%;
   height: 70px;
@@ -30,12 +45,96 @@ header {
 }
 
 .nav-list {
+  width: 120px;
   font-size: 16px;
   list-style: none;
   line-height: 70px;
-  margin: 0 30px;
+  padding: 0 30px;
 }
 
 .nav-list a {
   color: #fafafa;
+}
+
+/* mv */
+#mv {
+  width: 100%;
+  height: 650px;
+  color: #fafafa;
+  text-align: center;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.mv-logo {
+  font-size: 64px;
+  padding: 200px 0 10px;
+}
+
+.mv-message {
+  font-size: 20px;
+}
+
+/* Portfolio */
+#portfolio {
+  width: 100%;
+  background-color: #eceff1;
+}
+
+.pf-group {
+  width: 920px;
+  text-align: center;
+  padding: 90px 0 30px 0;
+  margin: 0 auto;
+}
+
+.pf-message {
+  font-size: 16px;
+  color: #000000;
+}
+
+.pf-images {
+  width: 920px;
+  padding-bottom: 90px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url(img/sketch.jpg);
+  margin-bottom: 10px;
+}
+
+.img2 {
+  background-image: url(img/websuku.png);
+  margin: 0 10px 10px;
+}
+
+.img3 {
+  background-image: url(img/write.jpg);
+  margin-bottom: 10px;
+}
+
+.img4 {
+  background-image: url(img/webcamp.png);
+  margin-bottom: 10px;
+}
+
+.img5 {
+  background-image: url(img/talk.jpg);
+  margin: 0 10px 10px;
+}
+
+.img6 {
+  background-image: url(img/webcamp-mother.png);
+  margin-bottom: 10px;
 }
