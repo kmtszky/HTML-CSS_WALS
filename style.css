@@ -94,7 +94,8 @@ header {
 }
 
 /* Portfolio */
-#portfolio {
+#portfolio,
+#profile {
   width: 100%;
   background-color: #eceff1;
   text-align: center;
@@ -143,7 +144,8 @@ header {
 }
 
 /* feature */
-#feature {
+#feature,
+#contact {
   width: 100%;
   text-align: center;
 }
@@ -177,4 +179,39 @@ header {
   text-align: left;
   font-size: 16px;
   color: #000000;
+}
+
+/* Profile */
+.my-profile {
+  display: flex;
+}
+
+.profile-image {
+  width: 512px;
+}
+
+.my-icon {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.profile-text {
+  width: 512px;
+  text-align: left;
+}
+
+.heading-myname {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.heading-myskills {
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+
+.profile-text p {
+  font-size: 16px;
+  color: #oooooo;
 }
