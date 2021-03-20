@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 90%;
+  width: 1024px;
   padding: 90px 0;
   margin: 0 auto;
 }
@@ -51,6 +51,23 @@ header {
 
 .logo {
   height: 70px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  width: 120px;
+  font-size: 16px;
+  list-style: none;
+  line-height: 70px;
+  padding: 0 30px;
+}
+
+.nav-list a {
+  color: #fafafa;
+  text-decoration: none;
 }
 
 /* mv */
@@ -192,7 +209,7 @@ header {
 
 .profile-text p {
   font-size: 16px;
-  color: #oooooo;
+  color: #000000;
 }
 
 /* Contact */
@@ -241,41 +258,34 @@ footer {
   line-height: 60px;
 }
 
-/* レスポンシブ対応（768px以上） */
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-
-  .nav-list {
-    width: 120px;
-    font-size: 16px;
-    list-style: none;
-    line-height: 70px;
-    padding: 0 30px;
-  }
-
-  .nav-list a {
-    color: #fafafa;
-    text-decoration: none;
-  }
-
+/* レスポンシブ対応（769px以上） */
+@media (min-width: 769px) {
   .menu-box {
     display: none;
   }
 }
 
-/* レスポンシブ対応（767px以下） */
-@media screen and (max-width: 767px) {
+/* レスポンシブ対応（768px以下） */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  /* header */
   header {
     height: 50px;
+  }
+
+  .header-group {
+    width: 90%;
   }
 
   .logo {
     height: 50px;
   }
 
-  nav {
+  nav,
+  .sp-none {
     display: none;
   }
 
@@ -283,7 +293,10 @@ footer {
     width: 40px;
     height: 40px;
     border: 1px solid #fafafa;
-    margin: 5px 5% 5px auto;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
   }
 
   .list-bar {
@@ -292,5 +305,99 @@ footer {
     margin: 5px auto;
     background-color: #fafafa;
     display: block;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  /* mv */
+  #mv {
+    background-image: url(img/code.png);
+  }
+
+  .mv-logo {
+    font-size: 40px;
+  }
+
+  .mv-message {
+    font-size: 18px;
+  }
+
+  /* portfolio */
+  .pf-images {
+    width: 100%;
+    display: block;
+  }
+
+  .img1,
+  .img3,
+  .img5 {
+    display: none;
+  }
+
+  .img2,
+  .img6 {
+    margin: 0 auto;
+  }
+  .img4 {
+    margin: 10px auto;
+  }
+
+  /* feature */
+  .contents {
+    width: 100%;
+    display: block;
+  }
+
+  .content {
+    margin: 0 auto;
+  }
+
+  .content-center {
+    margin: 10px auto;
+  }
+
+  /* profile */
+  .my-profile-group {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    margin: 0 auto;
+  }
+
+  .profile-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .index,
+  .index-under {
+    margin: 20px auto 5px auto;
+  }
+
+  /* contact */
+  .contact-list-group {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contact-list {
+    width: 100%;
+  }
+
+  .email-tel,
+  .SNS {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .fa-twitter {
+    margin: 0 8px;
   }
 }
