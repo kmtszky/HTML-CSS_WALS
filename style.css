@@ -282,7 +282,8 @@ footer {
     height: 50px;
   }
 
-  nav {
+  nav,
+  .sp-none {
     display: none;
   }
 
@@ -333,4 +334,17 @@ footer {
   .img4 {
     margin: 10px auto;
   }
+
+  /* feature */
+  .contents {
+    width: 90%;
+    display: block;
+  }
+
+  .content {
+    margin: 0 auto;
+  }
+
+  .content-center {
+    margin: 10px auto;
 }
