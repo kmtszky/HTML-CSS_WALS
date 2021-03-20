@@ -369,4 +369,26 @@ footer {
   .index-under {
     margin: 20px auto 5px auto;
   }
+
+  /* contact */
+  .contact-list-group {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .contact-list {
+    width: 100%;
+  }
+
+  .email-tel,
+  .SNS {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .fa-twitter {
+    margin: 0 8px;
+  }
 }
