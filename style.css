@@ -317,7 +317,7 @@ footer {
 
   /* portfolio */
   .pf-images {
-    width: 90%;
+    width: 100%;
     display: block;
   }
 
@@ -337,7 +337,7 @@ footer {
 
   /* feature */
   .contents {
-    width: 90%;
+    width: 100%;
     display: block;
   }
 
@@ -347,4 +347,26 @@ footer {
 
   .content-center {
     margin: 10px auto;
+  }
+
+  /* profile */
+  .my-profile-group {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    margin: 0 auto;
+  }
+
+  .profile-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .index,
+  .index-under {
+    margin: 20px auto 5px auto;
+  }
 }
