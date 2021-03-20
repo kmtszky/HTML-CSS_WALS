@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 90%;
+  width: 1024px;
   padding: 90px 0;
   margin: 0 auto;
 }
@@ -51,6 +51,27 @@ header {
 
 .logo {
   height: 70px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  width: 120px;
+  font-size: 16px;
+  list-style: none;
+  line-height: 70px;
+  padding: 0 30px;
+}
+
+.nav-list a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.menu-box {
+  display: none;
 }
 
 /* mv */
@@ -192,7 +213,7 @@ header {
 
 .profile-text p {
   font-size: 16px;
-  color: #oooooo;
+  color: #000000;
 }
 
 /* Contact */
@@ -241,34 +262,19 @@ footer {
   line-height: 60px;
 }
 
-/* レスポンシブ対応（768px以上） */
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-
-  .nav-list {
-    width: 120px;
-    font-size: 16px;
-    list-style: none;
-    line-height: 70px;
-    padding: 0 30px;
-  }
-
-  .nav-list a {
-    color: #fafafa;
-    text-decoration: none;
-  }
-
-  .menu-box {
-    display: none;
-  }
-}
-
 /* レスポンシブ対応（767px以下） */
 @media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  /* header */
   header {
     height: 50px;
+  }
+
+  .header-group {
+    width: 90%;
   }
 
   .logo {
@@ -292,5 +298,18 @@ footer {
     margin: 5px auto;
     background-color: #fafafa;
     display: block;
+  }
+
+  /* mv */
+  #mv {
+    background-image: url(img/code.png);
+  }
+
+  .mv-logo {
+    font-size: 40px;
+  }
+
+  .mv-message {
+    font-size: 18px;
   }
 }
