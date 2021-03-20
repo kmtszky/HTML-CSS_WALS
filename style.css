@@ -275,6 +275,7 @@ footer {
 
   .header-group {
     width: 90%;
+    display: block;
   }
 
   .logo {
@@ -311,5 +312,25 @@ footer {
 
   .mv-message {
     font-size: 18px;
+  }
+
+  /* portfolio */
+  .pf-images {
+    width: 90%;
+    display: block;
+  }
+
+  .img1,
+  .img3,
+  .img5 {
+    display: none;
+  }
+
+  .img2,
+  .img6 {
+    margin: 0 auto;
+  }
+  .img4 {
+    margin: 10px auto;
   }
 }
